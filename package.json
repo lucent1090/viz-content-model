@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
-    "start": "bsb -make-world -w -ws _ ",
     "clean": "bsb -clean-world",
-    "server": "moduleserve ./ --port 8000",
+    "start:bsb": "bsb -make-world -w -ws _ ",
+    "start:server": "moduleserve ./ --port 8000",
+    "start": "concurrently \"yarn start:bsb\" \"yarn start:server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "bs-platform": "^7.2.2",
+    "concurrently": "^5.1.0",
     "moduleserve": "^0.9.0"
   }
 }
