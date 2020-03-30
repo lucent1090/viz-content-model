@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ReasonReact Examples</title>
 </head>
 <body>
@@ -13,6 +15,7 @@
       }
     };
   </script>
+  <div id="root"></div>
 
   <!-- This is https://github.com/marijnh/moduleserve, the secret sauce that allows us not need to bundle things during development, and have instantaneous iteration feedback, without any hot-reloading or extra build pipeline needed. -->
   <script src="/moduleserve/load.js" data-module="/src/Index.bs.js"></script>
