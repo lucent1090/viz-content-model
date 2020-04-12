@@ -1,4 +1,10 @@
 [@react.component]
 let make = () => {
-  <div> {React.string("App")} </div>;
+  let route = Routes.useRoute();
+
+  switch(route){
+    | Home => <Home />
+    | ContentModel => <ContentModel />
+    | NotFound => <NotFound />
+  };
 };

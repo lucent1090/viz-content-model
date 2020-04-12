@@ -1,6 +1,4 @@
-[@bs.val] external document: Js.t({..}) = "document";
-
-ReactDOMRe.render(
+ReactDOMRe.renderToElementWithId(
   <App />,
-  document##getElementById("root")
+  "root"
 );
