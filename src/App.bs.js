@@ -2,12 +2,12 @@
 
 var React = require("react");
 var Home$ReasonReactExamples = require("./Home.bs.js");
-var Routes$ReasonReactExamples = require("./Routes.bs.js");
+var Router$ReasonReactExamples = require("./Router.bs.js");
 var NotFound$ReasonReactExamples = require("./NotFound.bs.js");
 var ContentModel$ReasonReactExamples = require("./ContentModel.bs.js");
 
 function App(Props) {
-  var route = Routes$ReasonReactExamples.useRoute(/* () */0);
+  var route = Router$ReasonReactExamples.useRoute(/* () */0);
   switch (route) {
     case /* Home */0 :
         return React.createElement(Home$ReasonReactExamples.make, { });

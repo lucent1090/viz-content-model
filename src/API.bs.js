@@ -1,1 +1,10 @@
-/* This output is empty. Its source's type definitions, externals and/or unused code got optimized away. */
+'use strict';
+
+
+function queryContentModel(paramStr) {
+  console.log(paramStr);
+  return /* Home */0;
+}
+
+exports.queryContentModel = queryContentModel;
+/* No side effect */

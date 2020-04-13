@@ -1,6 +1,6 @@
 [@react.component]
 let make = () => {
-  let route = Routes.useRoute();
+  let route = Router.useRoute();
 
   switch(route){
     | Home => <Home />
